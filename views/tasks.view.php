@@ -3,7 +3,7 @@
   <div class="container">
     <h1><a href="<?php echo '/'; ?>">Task Manager</a></h1>
     <p>This is a simple project for managing our daily task</p>
-    
+
     <?php
       if( !empty( $complete_task_query ) ){
         ?>
@@ -42,7 +42,7 @@
       }else{
     ?>
     <h4>Upcomming Task</h4>
-      <form action="submit.php" method="post">
+      <form action="taskaction" method="post">
         <table>
           <thead>
             <tr>
@@ -77,7 +77,7 @@
         </select>
         <input type="submit" id="bulksubmit" value="Submit" class="button-primary">
       </form>
-    <?php 
+    <?php
       }
       // mysqli_close($connection);
     ?>
